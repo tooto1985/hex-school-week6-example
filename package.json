@@ -1,0 +1,35 @@
+{
+  "name": "hex-school-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/tooto1985/hex-school-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/tooto1985/hex-school-example#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-fileupload": "^0.4.0",
+    "image-size": "^0.6.3"
+  },
+  "standard": {
+    "globals": [
+      "$",
+      "alert",
+      "FormData",
+      "Image",
+      "location",
+      "MutationObserver",
+      "universal",
+      "URL"
+    ]
+  }
+}

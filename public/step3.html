@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Step 3</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="ui-control.js"></script>
+  <script src="universal.js"></script>
+  <script src="validate-base.js"></script>
+  <script src="validate-upload.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="top-line"></div>
+        <div class="progress">
+          <div class="in done"></div>
+          <div class="in done"></div>
+          <div class="in"></div>
+          <div class=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <center>
+          <h1>Update Profile Picture</h1>
+          <div>We wanna know you more!</div>
+        </center>
+      </div>
+    </div>
+    <form action="/step3.html" method="POST" enctype="multipart/form-data">
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <label>
+              <div class="upload-box">
+                <i class="fas fa-images"></i>
+                <div>
+                  UPLOAD UP TO 3 PHOTOS
+                  <br> MAX SIZE: 150*150px
+                </div>
+              </div>
+              <input type="file" name="Photos" accept="image/*" multiple>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <button type="button" class="btn btn-warning form-control warn msg" value="">
+              <i class="fas fa-exclamation-triangle"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row list">
+        <div class="col-4">
+          <div class="form-group img">
+            <img>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="form-group img">
+            <img>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="form-group img">
+            <img>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary form-control warn">SUBMIT & NEXT</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Step 1</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="ui-control.js"></script>
+  <script src="universal.js"></script>
+  <script src="validate-base.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="top-line"></div>
+        <div class="progress">
+          <div class="in"></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <center>
+          <h1>Create Account</h1>
+          <div>Glad to see you here!</div>
+        </center>
+      </div>
+    </div>
+    <form action="/step1.html" method="POST" enctype="application/x-www-form-urlencoded">
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <label>Account</label>
+            <input type="email" name="Email" data-valid="1" class="form-control" placeholder="hexschool@email.com" data-toggle="tooltip" title="INVALID EMAIL">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" name="Password" data-valid="1" class="form-control" placeholder="Password" data-toggle="tooltip" title="MINIMUM 8 CHARACTERS">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <label>Confirm Password</label>
+            <input type="password" name="ConfirmPassword" data-valid="1" class="form-control" placeholder="Password" data-toggle="tooltip" title="NOT MATCH">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary form-control warn">SUBMIT & NEXT</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
